@@ -124,8 +124,13 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter Demo'),
         ),
-        body: const Center(
-          child: TapboxA(),
+        body: Center(
+          child: ListView(
+            children: const [
+              TapboxA(),
+              ParentWidget(),
+            ],
+          ),
         ),
       ),
     );
